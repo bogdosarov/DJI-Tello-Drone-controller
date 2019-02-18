@@ -1,0 +1,66 @@
+.controlsWrapper {
+  position: relative;
+  width: 302px;
+  height: 302px;
+}
+
+.control {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #000;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.control:hover {
+  border-color: dodgerblue;
+}
+
+.control svg {
+  transition: all 0.3s ease-in;
+}
+
+.control.active svg {
+  transform: scale(2);
+  color: red;
+}
+
+.up {
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.left {
+  left: 0;
+  top: 100px;
+}
+
+.right {
+  top: 100px;
+  right: 0;
+}
+
+.down {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lend {
+  left: 50%;
+  bottom: 100px;
+  transform: translateX(-50%);
+  height: 50px;
+}
+
+.takeoff {
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  height: 50px;
+}

@@ -1,0 +1,5 @@
+command
+battery?
+forward 300
+takeoff
+land
